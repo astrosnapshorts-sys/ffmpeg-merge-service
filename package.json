@@ -1,14 +1,15 @@
 {
   "name": "ffmpeg-merge-service",
   "version": "1.0.0",
-  "description": "FFmpeg video merge microservice for n8n cartoon automation",
+  "description": "FFmpeg video merge microservice",
   "main": "ffmpeg-server.js",
   "scripts": {
-    "start": "node ffmpeg-server.js",
-    "dev": "nodemon ffmpeg-server.js"
+    "start": "node ffmpeg-server.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2"
   },
   "engines": {
     "node": ">=18.0.0"
