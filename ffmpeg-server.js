@@ -5,7 +5,9 @@
  * Kurulum: Node.js + FFmpeg
  * Port: 3000 (Render otomatik ayarlar)
  */
-
+const ffmpegStatic = require('ffmpeg-static');
+const ffmpeg = require('fluent-ffmpeg');
+ffmpeg.setFfmpegPath(ffmpegStatic);
 const express = require('express');
 const { execSync, exec } = require('child_process');
 const https = require('https');
